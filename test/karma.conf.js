@@ -14,7 +14,7 @@ const karmaBaseConfig = {
     'test/**/*.js': ['browserify']
   },
 
-  browsers: ['Chrome'],
+  browsers: ['PhantomJS2'],
 
   reporters: ['progress', 'coverage'],
 
