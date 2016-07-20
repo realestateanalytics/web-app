@@ -13,3 +13,6 @@ cache:
 
 addons:
   sauce_connect: true
+
+notifications:
+  slack: realestatefuntimes:aPr18d2RbjpPB1mvN2tSDjdU
