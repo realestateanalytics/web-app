@@ -22,7 +22,17 @@ function OnConfig($stateProvider, $locationProvider, $urlRouterProvider, $compil
     controller: 'SearchResultsCtrl as searchResults',
     templateUrl: 'search.html',
     title: 'Search Results'
-  });
+  })
+  .state('PropertyDetails', {
+    url: '/property/:listingId',
+    params: {
+      listingId: null
+    },
+    controller: 'PropertyCtrl as property',
+    templateUrl: 'property.html',
+    title: 'Property Detail'
+  })
+  ;
 
   $urlRouterProvider.otherwise('/');
 
