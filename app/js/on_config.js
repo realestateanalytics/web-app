@@ -13,6 +13,15 @@ function OnConfig($stateProvider, $locationProvider, $urlRouterProvider, $compil
     controller: 'HomeCtrl as home',
     templateUrl: 'home.html',
     title: 'Home'
+  })
+  .state('SeachResults', {
+    url: '/search',
+    params: {
+      query: null
+    },
+    controller: 'SearchResultsCtrl as searchResults',
+    templateUrl: 'search.html',
+    title: 'Search Results'
   });
 
   $urlRouterProvider.otherwise('/');

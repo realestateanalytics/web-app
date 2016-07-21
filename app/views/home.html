@@ -5,15 +5,9 @@
 
 <div class="container">
   <div class="input-group">
-    <input type="text" class="form-control" placeholder="Search for...">
+    <input type="text" class="form-control" placeholder="Search for..." ng-model="query">
     <span class="input-group-btn">
-      <button class="btn btn-default" type="button">Search!</button>
+      <button class="btn btn-default" type="button" ui-sref="SeachResults({query: query})">Search!</button>
     </span>
-  </div>
-</div>
-
-<div class="navbar navbar-default navbar-fixed-bottom vcenter">
-  <div class="container">
-    <p class="text-center">&copy;2016 Real Estate Analytics</p>
   </div>
 </div>
