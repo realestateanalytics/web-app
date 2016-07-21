@@ -3,7 +3,7 @@ function HomeCtrl() {
   // ViewModel
   const vm = this;
 
-  vm.title = 'Real Estate Web App';
+  vm.title = 'Real Estate';
 }
 
 export default {
