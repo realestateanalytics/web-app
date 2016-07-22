@@ -1,11 +1,11 @@
 {
-  "name": "angularjs-gulp-browserify-boilerplate",
-  "version": "1.7.0",
-  "author": "Jake Marsh <jakemmarsh@gmail.com>",
-  "description": "Boilerplate using AngularJS, SASS, Gulp, and Browserify while also utilizing best practices.",
+  "name": "real-estate-web-app",
+  "version": "0.0.0",
+  "author": "KZ & MW",
+  "description": "Real Estate Analytics",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate.git"
+    "url": "https://david-dm.org/realestateanalytics/web-app.git"
   },
   "license": "MIT",
   "keywords": [
