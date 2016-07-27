@@ -116,6 +116,7 @@ fi
 # 3. Run gulp tasks
 echo "Running gulp tasks"
 cd "$DEPLOYMENT_SOURCE"
+eval 'npm install gulp -g --silent'
 eval 'gulp prod'
 exitWithMessageOnError "gulp failed"
 cd - > /dev/null
