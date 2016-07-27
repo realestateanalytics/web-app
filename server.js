@@ -9,7 +9,7 @@ var port = argv.port || 3000;
 var dist = '/build';
 var compression = require('compression');
 
-app.use(compression());//GZIP
+app.use(compression());
 
 var oneDay = 86400000;
 app.use('/js', express.static(__dirname +dist+'/js', { maxAge : oneDay*30 }));//30 days
@@ -17,8 +17,6 @@ app.use('/css', express.static(__dirname + dist+'/css', { maxAge : oneDay*30 }))
 app.use('/img', express.static(__dirname + dist+'/img', { maxAge : oneDay*30 }));//30 days
 app.use(express.static(__dirname+dist));
 
-console.log(dist);
-
-
-app.listen(port);
-console.log("Server listening on port " + port + " with mode prod? "+ (argv.prod? true: false));
+app.listen(process.env.PORT || port, function () {
+  console.log('Express server listening');
+});
