@@ -105,6 +105,7 @@ selectNodeVersion
 
 # 2. Install npm packages
 if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
+  echo "Installing NPM packages"
   cd "$DEPLOYMENT_TARGET"
   eval $NPM_CMD install
   exitWithMessageOnError "npm failed"
@@ -113,7 +114,7 @@ fi
 
 # 3. Run gulp tasks
 echo "Running gulp tasks"
-cd "$DEPLOYMENT_TARGET"
+#cd "$DEPLOYMENT_TARGET"
 eval './node_modules/.bin/gulp prod'
 exitWithMessageOnError "gulp failed"
 cd - > /dev/null
