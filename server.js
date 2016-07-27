@@ -6,7 +6,7 @@ var express = require("express");
 var app = express();
 var argv = require('yargs').argv;
 var port = argv.port || 3000;
-var dist = '/build';
+var dist = '/app';
 var compression = require('compression');
 
 app.use(compression());

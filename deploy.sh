@@ -117,7 +117,7 @@ echo "Running gulp tasks"
 cd "$DEPLOYMENT_TARGET"
 eval $NPM_CMD install gulp -g
 eval $NPM_CMD install --global gulp-cli
-eval 'gulp prod'
+#eval 'gulp prod'
 exitWithMessageOnError "gulp failed"
 cd - > /dev/null
 
