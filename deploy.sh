@@ -116,7 +116,7 @@ fi
 # 3. Run gulp tasks
 echo "Running gulp tasks"
 cd "$DEPLOYMENT_SOURCE"
-eval './node_modules/.bin/gulp prod'
+eval 'gulp prod'
 exitWithMessageOnError "gulp failed"
 cd - > /dev/null
 
