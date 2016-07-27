@@ -64,6 +64,8 @@ if [[ ! -n "$KUDU_SYNC_CMD" ]]; then
   fi
 fi
 
+npm install gulp -g --silent
+
 # Node Helpers
 # ------------
 
