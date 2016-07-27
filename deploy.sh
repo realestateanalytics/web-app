@@ -114,8 +114,9 @@ fi
 
 # 3. Run gulp tasks
 echo "Running gulp tasks"
-#cd "$DEPLOYMENT_TARGET"
-eval './node_modules/.bin/gulp prod'
+cd "$DEPLOYMENT_TARGET"
+eval $NPM_CMD install gulp -g
+eval 'gulp prod'
 exitWithMessageOnError "gulp failed"
 cd - > /dev/null
 
