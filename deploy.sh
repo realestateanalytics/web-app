@@ -64,8 +64,6 @@ if [[ ! -n "$KUDU_SYNC_CMD" ]]; then
   fi
 fi
 
-npm install gulp -g --silent
-
 # Node Helpers
 # ------------
 
@@ -115,9 +113,8 @@ fi
 
 # 3. Run gulp tasks
 echo "Running gulp tasks"
-cd "$DEPLOYMENT_SOURCE"
-eval 'npm install gulp -g --silent'
-eval 'gulp prod'
+cd "$DEPLOYMENT_TARGET"
+eval './node_modules/.bin/gulp prod'
 exitWithMessageOnError "gulp failed"
 cd - > /dev/null
 
