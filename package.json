@@ -23,7 +23,7 @@
   "private": false,
   "engines": {
     "node": "~4.2.x",
-    "npm": "^3.5.2",
+    "npm": "^3.5.2"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development ./node_modules/.bin/gulp dev",
