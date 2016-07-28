@@ -1,11 +1,22 @@
-module.exports = function($scope, $stateParams) {
+module.exports = function($scope, $stateParams, property) {
   var vm = $scope;
 
   vm.title = 'Property Details';
 
   vm.mls_id = $stateParams.mls_id;
 
-  vm.listing = {
+  property.getPropertyDetails(vm.mls_id)
+    .then(function(listing) {
+      vm.listing = listing;
+
+      vm.selectedPhoto = vm.listing.photos[0];
+
+      vm.changePhoto = function(id) {
+        vm.selectedPhoto = vm.listing.photos[id];
+      };
+    });
+
+  /**vm.listing = {
     'mls_id' : 'E3406384',
     'rms' : '5',
     'bathrooms' : '3',
@@ -70,10 +81,6 @@ module.exports = function($scope, $stateParams) {
     '%_dif' : '116',
     'extras' : "Yard From The Garage Don't Miss The Virtual Tour Of This Quality Home. Inclusions Stainless Steel Refrigerator, Stove, Dishwasher, Window Blinds And Egdo. Exclude Washer/Dryer, Basement Fridge, And Nursery Light Fixture"
   };
+***/
 
-  vm.selectedPhoto = vm.listing.photos[0];
-
-  vm.changePhoto = function(id) {
-    vm.selectedPhoto = vm.listing.photos[id];
-  };
 };
