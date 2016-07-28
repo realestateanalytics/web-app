@@ -1,3 +1,13 @@
-<div>
-		<h4>{{message}}</h4>
+<div class="jumbotron text-center jumbotron-light">
+  <h1 class="heading">{{home.title}}</h1>
+  <p>Historical Property Sales And Real Estate Analytics</p>
+</div>
+
+<div class="container">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search for..." ng-model="mls_id">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button" ui-sref="PropertyDetails({mls_id: mls_id})">Search!</button>
+    </span>
+  </div>
 </div>

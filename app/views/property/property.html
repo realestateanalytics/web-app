@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <h1 class="text-center">{{listing.address}}</h1>
+  <div class="row">
+    <div class="col-sm-6 text-center">
+      <img src={{selectedPhoto}}>
+      <ul class="pagination">
+        <li ng-repeat="photo in listing.photos track by $index">
+          <a href="" ng-click="changePhoto($index);">{{$index + 1}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <strong>Sold Information</strong>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 text-center">
+          <strong>Asking</strong>
+          <p>{{listing.listed | currency:undefined:0}}</p>
+        </div>
+        <div class="col-sm-6 text-center">
+          <strong>Sold</strong>
+          <p>{{listing.value | currency:undefined:0}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <strong>General Property Information</strong>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 text-center">
+          <strong>MLS ID</strong>
+          <p>{{listing.mls_id}}</p>
+        </div>
+        <div class="col-sm-3 text-center">
+          <strong>Type</strong>
+          <p>{{listing.type}}</p>
+        </div>
+        <div class="col-sm-3 text-center">
+          <strong>Style</strong>
+          <p>{{listing.style}}</p>
+        </div>
+        <div class="col-sm-3 text-center">
+          <strong>Municipality</strong>
+          <p>{{listing.municipality}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
