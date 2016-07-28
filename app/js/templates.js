@@ -1,0 +1,1 @@
+angular.module('templates', []).run(['$templateCache', function($templateCache) {$templateCache.put('home.html','<div>\n\t\t<h4>{{message}}</h4>\n</div>\n');}]);
