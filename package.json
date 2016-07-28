@@ -1,7 +1,7 @@
 {
-  "name": "angular-boilerplate",
+  "name": "re-web-app",
   "version": "1.0.0",
-  "description": "Angular boilerplate",
+  "description": "Real Estate Web Application",
   "main": "server.js",
   "directories": {
     "test": "test"
@@ -11,17 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kzabashta/angular-boilerplate.git"
+    "url": "git+https://github.com/realestateanalytics/web-app.git"
   },
   "keywords": [
-    "angular"
+    "Real Estate"
   ],
-  "author": "Kosta Zabashta",
+  "author": "KZ, MW",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kzabashta/angular-boilerplate/issues"
+    "url": "https://github.com/realestateanalytics/web-app/issues"
   },
-  "homepage": "https://github.com/kzabashta/angular-boilerplate#readme",
+  "homepage": "https://github.com/realestateanalytics/web-app#readme",
   "devDependencies": {
     "angular": "^1.5.8",
     "angular-mocks": "^1.5.8",

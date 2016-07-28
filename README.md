@@ -1,2 +1,1 @@
-# angular-boilerplate
-Angular boilerplate
+# Real Estate Web App
