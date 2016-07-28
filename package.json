@@ -6,8 +6,13 @@
   "directories": {
     "test": "test"
   },
+  "main": "server.js",
   "scripts": {
     "test": ""
+  },
+  "engines": {
+    "node": "~4.2.x",
+    "npm": "^3.5.2",
   },
   "repository": {
     "type": "git",
